@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "150808104518",
+    "project_id": "eseva-dd72f",
+    "storage_bucket": "eseva-dd72f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150808104518:android:794ec1420aba34c5eb8447",
+        "android_client_info": {
+          "package_name": "com.example.eseva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150808104518-ng483sg99tf5cj5ud4v51ll4inp9813m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCXsRSWwycvaCMf-0YVE2yoYJUZEWekPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150808104518-ng483sg99tf5cj5ud4v51ll4inp9813m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
