@@ -1,5 +1,7 @@
+import 'package:eseva/AuthenticationService.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,7 +14,9 @@ class HomePage extends StatelessWidget {
           title: Text('eseva'),
           centerTitle: true,
           actions: [
-            TextButton(onPressed: (){}, child: Text('Logout'))
+            TextButton(onPressed: (){
+              context.read<AuthenticationService>().logout();
+            }, child: Text('Logout'))
           ],
         ),
         body: Center(
