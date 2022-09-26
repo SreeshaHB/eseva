@@ -22,6 +22,13 @@ class HomePage extends StatelessWidget {
         body: Center(
           child: Text(user!.displayName.toString()),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.checklist), label: 'ESeva'),
+            BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: 'Profile')
+          ],
+        ),
       );
   }
 }
