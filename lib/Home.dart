@@ -77,9 +77,9 @@ class _HomePageState extends State<HomePage> {
                 title: Column(
                   children: [
                     Text('SEVA DETAILS', style: Theme.of(context).textTheme.overline,),
-                    Text(documentSnapshot['Name'], style: Theme.of(context).textTheme.headlineMedium,),
+                    Text(documentSnapshot['Name'], style: Theme.of(context).textTheme.titleLarge,),
                     Text('Available: ' + documentSnapshot['Qty'].toString()),
-                    Text('Seva Price: ' + documentSnapshot['Seva_price'].toString()),
+                    Text('Seva Price: ₹' + documentSnapshot['Seva_price'].toString() + '/-'),
                   ],
                   crossAxisAlignment: CrossAxisAlignment.start,
                 ),
@@ -105,6 +105,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('eseva'),
         centerTitle: true,
@@ -121,10 +122,10 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.checklist), label: 'ESeva'),
+          BottomNavigationBarItem(icon: Icon(Icons.roofing_outlined), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.volunteer_activism_outlined), label: 'ESeva'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: 'Profile')
+              icon: Icon(Icons.account_circle_outlined), label: 'Profile')
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue,

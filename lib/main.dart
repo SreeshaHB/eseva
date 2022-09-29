@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             primarySwatch: Colors.blue,
             useMaterial3: true,
+          textTheme: GoogleFonts.ubuntuTextTheme(),
         ),
         home: const AuthenticationWrapper(),
       ),
